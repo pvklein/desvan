@@ -23,7 +23,9 @@
 	   <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
-	    <link href="css/bootstrap-social.css" rel="stylesheet">
+		<link href="css/bootstrap-social.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<style>
 		.instagramWrapper embed {
     		position: absolute;
@@ -65,7 +67,7 @@
 		</div>
 		<nav class="navbar navbar-inverse navbar-fixed-top hidden-lg hidden-sm hidden-md" role="navigation" id="menu">
             <div class="container">
-			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que añadirle también el paso 2 de abajo -->
+			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que aï¿½adirle tambiï¿½n el paso 2 de abajo -->
 				<div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -91,7 +93,7 @@
         </nav>  
 		<nav class="navbar navbar-inverse hidden-xs" role="navigation" id="menu">
             <div class="container">
-			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que añadirle también el paso 2 de abajo -->
+			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que aï¿½adirle tambiï¿½n el paso 2 de abajo -->
 				<div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
@@ -157,47 +159,47 @@
 	
 	<div class="container">
         <div class="row row-content">
-                <div class="col-xs-12 col-sm-8">
-				      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+            <div class="col-xs-12 col-sm-8">
+				<div id="myCarousel">
+					<div class="w3-content w3-display-container">
+  						<img class="mySlides" src="images/indice.jpg" style="width:100%">
+						<img class="mySlides" src="images/indice2.jpg" style="width:100%">
+						<img class="mySlides" src="images/indice3.jpg" style="width:100%">
+						<img class="mySlides" src="images/indice1.jpg" style="width:100%">
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="http://lorempixel.com/580/250/nature/2" alt="Chania" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="http://lorempixel.com/580/250/nature/3" alt="Chania" width="460" height="345">
-      </div>
-    
-      <div class="item">
-        <img src="http://lorempixel.com/580/250/nature/1" alt="Flower" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="http://lorempixel.com/580/250/nature/3" alt="Flower" width="460" height="345">
-      </div>
-    </div>
-
-   
-  </div>
-  </div>
-  
-  
-                <div class="col-xs-12 col-sm-4">
-				<?php include 'calendario4.php';?>
+						<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+						<a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+					</div>
 				</div>
- 
+			</div>		
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
   
-  </div>
-	
+  
+  
+        	<div class="col-xs-12 col-sm-4">
+				<?php include 'calendario4.php';?>
+			</div>
+		</div>
+ 	</div>	
 	
 	<div class="container">
 	<div id="cont-cab1" align="center">
