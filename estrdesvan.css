@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+#blanco
+{
+	height:100px;
+}
+
+/* CSS Document */
+ @font-face {
+  font-family: "fuentemenu";
+  src: url("LibreBaskerville-Bold.otf");
+  }
+
+nav {
+	background-image:url(images/reja.png);
+	background-color:white;
+}   
+
+#cabecera
+{
+background-image:url(images/reja2.png);
+}
+
+#cont-cabecera
+{
+width:100%;
+height:326px;
+background-image:url(images/reja2.png);
+}
+
+#cont-cab
+{
+height:180px;
+display:table;
+width:100%;
+}
+#cont-cab1
+{
+height:180px;
+display:table-cell;
+width:70%;
+}
+#cont-cab2
+{
+height:180px;
+display:table-cell;
+width:30%;
+}
+
+#cont-menu
+{
+display:inline-table;
+width:100%;
+height:80px;
+background:url(images/reja.png) repeat-x;
+font-family:fuentemenu;
+padding:25px;
+color:#FFFFFF;
+font-size:large;
+}
+#cont-slide
+{
+width: 50%;
+height:332px;
+margin: 0 auto;
+background-image:url(images/diademas.jpg);
+}
+

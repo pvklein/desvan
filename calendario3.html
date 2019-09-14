@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+</head>
+<style>
+body{
+font-size:20px;
+}
+
+.cabecera{
+}
+
+.diassemana{
+color:black;
+vertical-align:middle;
+text-align:center;
+}
+
+.dias{
+color:#999999;
+vertical-align:middle;
+text-align:center;
+}
+
+.diasuni:hover{
+border-radius: 10px;
+background: #BADA55;
+}
+
+.event{
+border-radius: 10px;
+background: #BADA55;
+}
+
+.prev-month
+{
+color:#CCCCCC
+}
+
+.next-month
+{
+color:#CCCCCC
+}
+
+</style>
+<body>
+<div class="container">
+
+		<div class="calendar" >
+
+			<header>				
+
+				<h2 class="cabecera">September</h2>
+
+				<a rel="nofollow" class="btn-prev fontawesome-angle-left" href="#"></a>
+				<a rel="nofollow" class="btn-next fontawesome-angle-right" href="#"></a>
+
+			</header>
+			
+			<table width="400">
+			
+				<thead>
+					
+					<tr class="diassemana">
+						
+						<td>Mo</td>
+						<td>Tu</td>
+						<td>We</td>
+						<td>Th</td>
+						<td>Fr</td>
+						<td>Sa</td>
+						<td>Su</td>
+
+					</tr>
+
+				</thead>
+
+				<tbody>
+					
+					<tr class="dias">
+						<td class="prev-month">26</td>
+						<td class="prev-month">27</td>
+						<td class="prev-month">28</td>
+						<td class="prev-month">29</td>
+						<td class="prev-month">30</td>
+						<td class="prev-month">31</td>
+						<td>1</td>
+					</tr>
+					<tr class="dias">
+						<td class="diasuni">2</td>
+						<td class="diasuni">3</td>
+						<td class="diasuni">4</td>
+						<td class="diasuni">5</td>
+						<td class="diasuni">6</td>
+						<td class="diasuni">7</td>
+						<td class="diasuni">8</td>
+					</tr>
+					<tr class="dias">
+						<td>9</td>
+						<td class="event" data-toggle="modal" data-target="#exampleModal" data-whatever="10" data-clase="evento">10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+					</tr>
+					<tr class="dias">
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td class="event" data-toggle="modal" data-target="#exampleModal" data-whatever="hola" data-clase="evento">21</td>
+						<td>22</td>
+					</tr>
+
+					<tr class="dias">
+						<td class="current-day event">23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+					</tr>
+					<tr class="dias">
+						<td>30</td>
+						<td class="next-month">1</td>
+						<td class="next-month">2</td>
+						<td class="next-month">3</td>
+						<td class="next-month">4</td>
+						<td class="next-month">5</td>
+						<td class="next-month">6</td>
+					</tr>
+
+				</tbody>
+
+			</table>
+
+		</div> <!-- end calendar -->
+
+	</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+		  <div class="form-group">
+            <h3 class="Cabtaller" id="Cabtaller">Taller:</h3>
+            <p class="form-control" id="desc-curso"> Descripción del taller </p>
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Email:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Mensaje:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script>
+ $('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var dia = button.data('whatever')
+  var recipient = button.data('clase') // Extract info from data-* attributes
+  if (recipient !="evento")
+  {
+  return false;
+  }
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + dia)
+  modal.find('.Cabtaller').text('Nuevo taller de ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+ </script>
+</body>
+</html>

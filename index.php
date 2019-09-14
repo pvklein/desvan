@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      
+      <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+		
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+
+       
+	   <link rel="stylesheet" type="text/css" href="estilosuperpos.css">
+	   <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	   
+	  
+	   <link href="css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+	    <link href="css/bootstrap-social.css" rel="stylesheet">
+		<style>
+		.instagramWrapper embed {
+    		position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    height: 100%;
+			}
+		</style>
+</head>
+
+<body>
+
+<header id="cabecera" >
+             <div class="row row-header">
+                <div class="col-xs-12 col-sm-2">
+                    	<div id="flores" style="padding-left:30px" class="hidden-xs">
+							<img src="images/flores3.png" width="300px">
+						</div>
+				</div>
+				<div class="col-xs-12 col-sm-6" id="titulo">
+                    	<p id="cont-68p" style="padding-top:80px" class="hidden-xs">El Desv&aacute;n de Carol</p>
+						<p id="cont-30p" style="padding-top:80px" class="hidden-sm hidden-lg hidden-md">El Desv&aacute;n de Carol</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 hidden-xs" id="titulo" style="padding-top:100px">
+                    	<div id="direccion">C/Ram&oacute;n y Cajal 8</div>
+						<div id="direccion">(28902) Getafe</div>
+						<div id="direccion">91 112 49 59</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 hidden-sm hidden-lg hidden-md" id="titulo">
+                    	<div id="direccion">C/Ram&oacute;n y Cajal 8</div>
+						<div id="direccion">(28902) Getafe</div>
+						<div id="direccion">91 112 49 59</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top hidden-lg hidden-sm hidden-md" role="navigation" id="menu">
+            <div class="container">
+			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que añadirle también el paso 2 de abajo -->
+				<div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+				<!-- Este es el paso 2 para que desaparezca el menu al pulsar el boton By doing this, we are specifying that this navbar with the id navbar will be collapsed on smaller screens, but can be toggled on or off when the toggle button is clicked. Note the use of data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" within the button -->
+				<div id="navbar" class="navbar-collapse collapse">
+                	<ul class="nav navbar-nav">
+                    	<li><a href="index.php" style="font-size:16px"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Inicio</a></li>
+                    	<li><a href="cursos.php" style="font-size:16px"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span>Cursos</a></li>						
+                    	<li><a href="http://www.eldesvandecarol.es/tienda" style="font-size:16px"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span>Tienda Online</a></li>
+                    	<li><a href="contactus.html" style="font-size:16px"><span class="fa fa-envelope-o"
+                         aria-hidden="true"></span>Contacto</a></li>
+                	</ul>
+				</div>
+            </div>
+        </nav>  
+		<nav class="navbar navbar-inverse hidden-xs" role="navigation" id="menu">
+            <div class="container">
+			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que añadirle también el paso 2 de abajo -->
+				<div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+				<!-- Este es el paso 2 para que desaparezca el menu al pulsar el boton By doing this, we are specifying that this navbar with the id navbar will be collapsed on smaller screens, but can be toggled on or off when the toggle button is clicked. Note the use of data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" within the button -->
+				<div id="navbar" class="navbar-collapse collapse">
+                	<ul class="nav navbar-nav">
+                    	<li><a href="index.php" style="font-size:16px"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Inicio</a></li>
+                    	<li><a href="cursos.php" style="font-size:16px"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span>Cursos</a></li>						
+                    	<li><a href="http://www.eldesvandecarol.es/tienda" style="font-size:16px"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span>Tienda Online</a></li>
+                    	<li><a href="contactus.html" style="font-size:16px"><span class="fa fa-envelope-o"
+                         aria-hidden="true"></span>Contacto</a></li>
+                	</ul>
+				</div>
+            </div>
+        </nav>   
+    </div>
+     
+	 </header>
+	 
+<div class="container">
+        <div class="row row-content">
+                <div class="col-xs-12 col-sm-4">
+          			<div class="card" style="width:300px;">
+						  <img class="card-img-top" src="images/sample-1.jpg" width="300px" alt="Card image cap">
+						  <div class="card-block">
+						    <h4 class="card-title">Card title</h4>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+					</div>
+          		</div>
+				<div class="col-xs-12 col-sm-4">
+          			<div class="card" style="width:300px;">
+						  <img class="card-img-top" src="images/sample-1.jpg" width="300px" alt="Card image cap">
+						  <div class="card-block">
+						    <h4 class="card-title">Card title</h4>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+					</div>
+          		</div>
+				<div class="col-xs-12 col-sm-4">
+          			<div class="card" style="width:300px;">
+						  <img class="card-img-top" src="images/sample-1.jpg" width="300px" alt="Card image cap">
+						  <div class="card-block">
+						    <h4 class="card-title">Card title</h4>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">Go somewhere</a>
+						  </div>
+					</div>
+          		</div>
+        </div>
+	</div>
+	
+	
+	<div class="container">
+        <div class="row row-content">
+                <div class="col-xs-12 col-sm-8">
+				      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="http://lorempixel.com/580/250/nature/2" alt="Chania" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="http://lorempixel.com/580/250/nature/3" alt="Chania" width="460" height="345">
+      </div>
+    
+      <div class="item">
+        <img src="http://lorempixel.com/580/250/nature/1" alt="Flower" width="460" height="345">
+      </div>
+
+      <div class="item">
+        <img src="http://lorempixel.com/580/250/nature/3" alt="Flower" width="460" height="345">
+      </div>
+    </div>
+
+   
+  </div>
+  </div>
+  
+  
+                <div class="col-xs-12 col-sm-4">
+				<?php include 'calendario4.php';?>
+				</div>
+ 
+  
+  </div>
+	
+	
+	<div class="container">
+	<div id="cont-cab1" align="center">
+		<div id="cont-40p">
+	Siguenos en Instagram!!
+		</div>
+	</div>
+  <div class="row">
+        <div class="col s4 m10 col-xs-12 offset-m1">
+  <iframe src="//users.instush.com/h-slider/?cols=7&round=true&circle=false&pin=true&user_id=1280035232&username=eldesvandecarol&sid=-1&susername=-1&tag=-1&stype=mine&t=999999VY3vRnYQIBzPn8eYLZt3E9cENVwd7uW1qPhXvWFl8iDTsI5Rblv6v-Fjg2El9qZbB_CrwGZcHSA" allowtransparency="true" frameborder="0" scrolling="no"  style="display:block;width:1190px;height:190px;border:none;overflow:visible;" ></iframe>
+  </div>
+  </div>
+	</div>
+	
+<footer>
+        <div class="container">
+            <div class="row row-footer">             
+                <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="http://www.eldesvandecarol.es/tienda">Tienda Online</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <h5>Nuestra direcci&oacute;n:</h5>
+                    <address>
+		              C/Ram&oacute;n y Cajal 8<br>
+		              (28902) Getafe<br>
+		              Madrid<br>
+		              	<i class="fa fa-phone"></i>: +34 91 112 4959<br>
+		                <i class="fa fa-envelope"></i>: 
+              	          <a href="mailto:desvancarol@gmail.com">desvancarol@gmail.com</a>
+		           </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>Copyright 2017 El Desv&aacute;n de Carol</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+	 
+	  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

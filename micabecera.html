@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="estilosuperpos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+</head>
+
+<body>
+<header id="cabecera" >
+
+<!-- El primer navbar es el que aparece arriba en caso de la pantalla del movil -->
+<div class="hidden-lg hidden-sm hidden-md">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu">
+            <div class="container">
+			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que añadirle también el paso 2 de abajo -->
+				<div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+				<!-- Este es el paso 2 para que desaparezca el menu al pulsar el boton By doing this, we are specifying that this navbar with the id navbar will be collapsed on smaller screens, but can be toggled on or off when the toggle button is clicked. Note the use of data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" within the button -->
+				<div id="navbar" class="navbar-collapse collapse">
+                	<ul class="nav navbar-nav">
+                    	<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Home</a></li>
+                    	<li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span>About</a></li>
+						
+                    	<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                         role="button" aria-haspopup="true" aria-expanded="false">
+                         <span class="glyphicon glyphicon-list-alt"
+                         aria-hidden="true"></span>Menu <span class="caret"></span></a>
+                        	<ul class="dropdown-menu">
+                            	<li><a href="#">Appetizers</a></li>
+                            	<li><a href="#">Main Courses</a></li>
+                            	<li><a href="#">Desserts</a></li>
+                            	<li><a href="#">Drinks</a></li>
+                            	<li role="separator" class="divider"></li>
+                            	<li class="dropdown-header">Specials</li>
+                            	<li><a href="#">Lunch Buffet</a></li>
+                            	<li><a href="#">Weekend Brunch</a></li>
+                        	</ul>
+                     	</li>
+                    	<li><a href="contactus.html"><span class="fa fa-envelope-o"
+                         aria-hidden="true"></span>Contact</a></li>
+                	</ul>
+				</div>
+            </div>
+        </nav>
+	</div>
+
+             <div class="row row-header">
+                <div class="col-xs-12 col-sm-2">
+                    	<div id="flores" style="padding-left:30px" class="hidden-xs">
+							<img src="images/flores3.png" width="300px">
+						</div>
+				</div>
+				<div class="col-xs-12 col-sm-6" id="titulo">
+                    	<p id="cont-68p" style="padding-top:80px" class="hidden-xs">El Desván de Carol</p>
+						<p id="cont-30p" style="padding-top:80px" class="hidden-sm hidden-lg hidden-md">El Desván de Carol</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 hidden-xs" id="titulo" style="padding-top:100px">
+                    	<div id="direccion">C/Ramón y Cajal nº8</div>
+						<div id="direccion">(28902) Getafe</div>
+						<div id="direccion">91 112 49 59</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 hidden-sm hidden-lg hidden-md" id="titulo">
+                    	<div id="direccion">C/Ramón y Cajal nº8</div>
+						<div id="direccion">(28902) Getafe</div>
+						<div id="direccion">91 112 49 59</div>
+				</div>
+			</div>
+			
+	<!-- El segundo navbar es el que aparece arriba en caso de la pantalla que no sea de movil -->
+	<div class="hidden-xs">
+		<nav class="navbar navbar-inverse" role="navigation" id="menu">
+            <div class="container">
+			<!-- Este div hace que aparezca el boton que activa o desactiva el menu colapsado, hay que añadirle también el paso 2 de abajo -->
+				<div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+				<!-- Este es el paso 2 para que desaparezca el menu al pulsar el boton By doing this, we are specifying that this navbar with the id navbar will be collapsed on smaller screens, but can be toggled on or off when the toggle button is clicked. Note the use of data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" within the button -->
+				<div id="navbar" class="navbar-collapse collapse">
+                	<ul class="nav navbar-nav">
+                    	<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
+                         aria-hidden="true"></span> Home</a></li>
+                    	<li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign"
+                         aria-hidden="true"></span>About</a></li>
+						
+                    	<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                         role="button" aria-haspopup="true" aria-expanded="false">
+                         <span class="glyphicon glyphicon-list-alt"
+                         aria-hidden="true"></span>Menu <span class="caret"></span></a>
+                        	<ul class="dropdown-menu">
+                            	<li><a href="#">Appetizers</a></li>
+                            	<li><a href="#">Main Courses</a></li>
+                            	<li><a href="#">Desserts</a></li>
+                            	<li><a href="#">Drinks</a></li>
+                            	<li role="separator" class="divider"></li>
+                            	<li class="dropdown-header">Specials</li>
+                            	<li><a href="#">Lunch Buffet</a></li>
+                            	<li><a href="#">Weekend Brunch</a></li>
+                        	</ul>
+                     	</li>
+                    	<li><a href="contactus.html"><span class="fa fa-envelope-o"
+                         aria-hidden="true"></span>Contact</a></li>
+                	</ul>
+				</div>
+            </div>
+        </nav>
+	</div>
+</header>
+</body>
+</html>

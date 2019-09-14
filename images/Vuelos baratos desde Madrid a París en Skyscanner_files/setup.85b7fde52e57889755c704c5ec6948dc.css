@@ -1,0 +1,274 @@
+body {
+  /*This is a hack for the skyscaper advert*/
+  overflow-x: hidden;
+}
+
+.day-list-item.sponsored-item .dynamic-ad .result-sponsored .sponsored-header .airline-copy h5.font-size-small {
+    font-size: 0.875em;
+}
+
+.day-list-item.sponsored-item .dynamic-ad .result-sponsored .sponsored-header .airline-copy h5.font-size-large {
+    font-size: 1em;
+}
+
+#dynamic-ad .sponsored-badge{
+    margin: 0 auto;
+}
+
+#dynamic-ad .sponsored-badge.wide-screen {
+    display:table;
+}
+
+#dynamic-ad .sponsored-badge.narrow-screen {
+    display:none;
+}
+
+#dynamic-ad .result-sponsored .card-body {
+    width: 72%;
+    padding: 8px;
+    border-bottom: none;
+}
+
+#dynamic-ad .details-group {
+    border: none;
+    padding: 8px;
+}
+
+#dynamic-ad .result-sponsored .airline-logo img {
+    border: 0;
+}
+
+/* General Advert placement stuff */
+.mpu-strevda {
+  width: 300px;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+#category-carhire.page-airporttransfers .mpu-strevda {
+    position:absolute;
+}
+
+#skyscraper-strevda {
+  position: absolute;
+  right: -180px;
+  width: 160px;
+}
+#banner-strevda {
+  margin: 16px 0
+}
+
+#bottom-mobile-strevda {
+  margin: 0 auto;
+}
+
+/*is page-flights used anywhere?*/
+.page-flights #skyscraper-strevda {
+  top: 106px;
+}
+
+#mpu-fallback-strevda {
+  margin-bottom: 20px;
+}
+
+.page-day #sidebar, .page-day #skyscraper-strevda {
+  margin-top: 10px;
+  right:0;
+}
+
+.page-browse #content-wrap #sidebar,
+.page-month #content-wrap #sidebar,
+.page-browse #skyscraper-strevda,
+.page-month #skyscraper-strevda {
+  margin-top: 10px;
+}
+
+/* this fixes an issue with the old-style inline ads and should be able to be removed when all ads are migrated over to Native Styles */
+#dynamic-ad .result-sponsored .mainquote, #dynamic-ad .mainquote-minimal-wrapper {
+    background-color: transparent;
+}
+
+/* this fixes an issue with the old-style inline ads and should be able to be removed when all ads are migrated over to Native Styles */
+#dynamic-ad .mainquote-minimal-select .bpk-button {
+    float:right;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+@media screen and (max-width: 1090px) {
+  #category-carhire .mpu-strevda{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .default-layout #sidebar .mpu-strevda,
+  .default-layout #skyscraper-strevda {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #banner-strevda {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1425px) {
+  #skyscraper-strevda {
+    display: none;
+  }
+}
+
+/* Cabin Class Upsell stuff */
+.day-list-item.sponsored-item .dynamic-ad.ad-class-upsell .result-sponsored .sponsored-badge {
+    float: right;
+}
+
+.ad-class-upsell .mainquote-price-up {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 100%;
+    display: none;
+}
+
+.mainquote-price-up-container {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding: 8px;
+}
+
+.ad-class-upsell .mainquote-price-up:first-child {
+    margin-bottom: 8px;
+}
+
+.ad-class-upsell .mainquote-price-base a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ad-class-price-section {
+    display: block;
+}
+
+.mainquote-ad-upsell {
+    display: table;
+    min-height: 100%;
+    width: 100%;
+}
+
+.ad-class-upsell .ad-class-name {
+    color: #34363d;
+}
+
+.ad-class-upsell .ad-class-from {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.ad-class-upsell .ad-class-price {
+    position: relative;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
+.ad-class-upsell .ad-class-price:after {
+    content: '';
+    display: block;
+    width: 9px;
+    height: 12px;
+    background: transparent url('data:image/svg+xml;charset=US-ASCII,<svg%20xmlns%3D"http%3A//www.w3.org/2000/svg"%20viewBox%3D"0%200%206%2012"%20enable-background%3D"new%200%200%206%2012"><path%20fill%3D"%2303B0D5"%20d%3D"M1.125%2012c.314%200%20.626-.13.848-.385l3.394-3.89c.843-.967.843-2.482%200-3.449l-3.395-3.89c-.407-.468-1.118-.518-1.586-.109-.468.409-.516%201.119-.108%201.588l3.394%203.89c.104.119.104.371%200%20.49l-3.394%203.89c-.409.468-.36%201.179.108%201.587.213.186.476.278.739.278z"/></svg>') no-repeat 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+}
+
+@media (min-width: 561px) {
+
+
+    .day-list-item.sponsored-item .dynamic-ad.ad-class-upsell .result-sponsored .card-body {
+        padding-bottom: 40px;
+    }
+
+    #dynamic-ad .cba-price .mainquote-price .sponsored-loading {
+        font-size: 16px;
+        padding: 0 2px 0 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .day-list-item.sponsored-item .dynamic-ad.ad-class-upsell .result-sponsored .sponsored-header .airline-copy {
+        width: 100%;
+    }
+
+    #dynamic-ad .sponsored-badge.wide-screen {
+        display:none;
+    }
+
+    #dynamic-ad .sponsored-badge.narrow-screen {
+        display:table;
+    }
+
+    #dynamic-ad .bpk-button {
+        margin-top:6px;
+    }
+
+    #dynamic-ad > .result-sponsored > .mainquote-cba.clearfix.group-price > div {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 560px) and (min-width: 420px) {
+    #dynamic-ad .mainquote-wrapper-cba {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    #dynamic-ad > article > div.mainquote-cba.clearfix.group-price {
+        display: flex;
+    }
+
+    #dynamic-ad .result-sponsored .card-body {
+        width: auto;
+    }
+
+    .day-content .day-list-item .ad-class-upsell .mainquote {
+        display: block;
+    }
+
+    .day-content .day-list-item .ad-class-upsell .mainquote-price-up {
+        text-align: right;
+    }
+
+    .day-list .day-list-item.sponsored-item .ad-class-upsell.dynamic-ad .result-sponsored .mainquote {
+        position: relative;
+    }
+
+    .ad-class-upsell .mainquote-price-up-container,
+    .ad-class-upsell .mainquote-ad-upsell {
+        height: auto;
+        min-height: 0;
+    }
+    .ad-class-upsell .ad-class-price-section {
+        display: inline;
+    }
+}
+
+.sponsored-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+testFingerprint {
+    display: none;
+}
